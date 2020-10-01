@@ -432,7 +432,14 @@ inoremap jj <Esc>
 "add clang format with mapleader
 nmap <leader>cf :!clang-format -i %<cr>
 
+" put buffer list to quckfix window
 noremap <C-f> :cgetexpr system("ag --vimgrep " . expand("<cword>") . " ") <cr> :copen <cr>
 
-
+" setting for netrw
+let g:netrw_banner = 0        " remove directions at top of file listing
+let g:netrw_liststyle=3       " tree style listing
+let g:netrw_browse_split = 3  " split horizontal
+let g:netrw_altv = 1
+let g:netrw_winsize=25        " width of window
+let g:netrw_preview=1
 
